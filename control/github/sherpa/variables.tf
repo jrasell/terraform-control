@@ -20,8 +20,6 @@ variable "label_name_api" {}
 variable "label_description_api" {}
 variable "label_name_policy_engine" {}
 variable "label_description_policy_engine" {}
-variable "label_name_policy_storage" {}
-variable "label_description_policy_storage" {}
 variable "label_name_scaling" {}
 variable "label_description_scaling" {}
 variable "label_name_autoscaling" {}
@@ -30,6 +28,16 @@ variable "label_name_security" {}
 variable "label_description_security" {}
 variable "label_name_cli" {}
 variable "label_description_cli" {}
+variable "label_name_ui" {}
+variable "label_description_ui" {}
+variable "label_name_build" {}
+variable "label_description_build" {}
+variable "label_name_leadership" {}
+variable "label_description_leadership" {}
+variable "label_name_storage" {}
+variable "label_description_storage" {}
+variable "label_name_scaling_state" {}
+variable "label_description_scaling_state" {}
 variable "label_color_status" {}
 variable "label_name_blocked" {}
 variable "label_description_blocked" {}

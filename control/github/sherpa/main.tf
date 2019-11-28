@@ -76,15 +76,6 @@ module "github_label_policy_engine" {
   label_description = var.label_description_policy_engine
 }
 
-module "github_label_policy_storage" {
-  source = "../../../modules/github/label"
-
-  label_repository  = var.label_repository
-  label_color       = var.label_color_area
-  label_name        = var.label_name_policy_storage
-  label_description = var.label_description_policy_storage
-}
-
 module "github_label_scaling" {
   source = "../../../modules/github/label"
 
@@ -119,6 +110,51 @@ module "github_label_cli" {
   label_color       = var.label_color_area
   label_name        = var.label_name_cli
   label_description = var.label_description_cli
+}
+
+module "github_label_ui" {
+  source = "../../../modules/github/label"
+
+  label_repository  = var.label_repository
+  label_color       = var.label_color_area
+  label_name        = var.label_name_ui
+  label_description = var.label_description_ui
+}
+
+module "github_label_build" {
+  source = "../../../modules/github/label"
+
+  label_repository  = var.label_repository
+  label_color       = var.label_color_area
+  label_name        = var.label_name_build
+  label_description = var.label_description_build
+}
+
+module "github_label_leadership" {
+  source = "../../../modules/github/label"
+
+  label_repository  = var.label_repository
+  label_color       = var.label_color_area
+  label_name        = var.label_name_leadership
+  label_description = var.label_description_leadership
+}
+
+module "github_label_storage" {
+  source = "../../../modules/github/label"
+
+  label_repository  = var.label_repository
+  label_color       = var.label_color_area
+  label_name        = var.label_name_storage
+  label_description = var.label_description_storage
+}
+
+module "github_label_scaling_state" {
+  source = "../../../modules/github/label"
+
+  label_repository  = var.label_repository
+  label_color       = var.label_color_area
+  label_name        = var.label_name_scaling_state
+  label_description = var.label_description_scaling_state
 }
 
 /*
